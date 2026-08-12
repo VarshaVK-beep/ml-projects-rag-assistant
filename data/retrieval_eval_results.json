@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "question": "What accuracy did the churn prediction model achieve?",
+      "expected_source": "churn_readme.md",
+      "retrieved_sources": [
+        "churn_readme.md",
+        "churn_readme.md",
+        "churn_readme.md"
+      ],
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0
+    },
+    {
+      "question": "What hyperparameter tuning method was used for XGBoost?",
+      "expected_source": "churn_readme.md",
+      "retrieved_sources": [
+        "churn_readme.md",
+        "churn_readme.md",
+        "ticket_finetune.py"
+      ],
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0
+    },
+    {
+      "question": "How was SHAP used in the churn project?",
+      "expected_source": "churn_readme.md",
+      "retrieved_sources": [
+        "churn_readme.md",
+        "churn_readme.md",
+        "churn_readme.md"
+      ],
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0
+    },
+    {
+      "question": "What transformer model was fine-tuned for ticket classification?",
+      "expected_source": "ticket_classifier_readme.md",
+      "retrieved_sources": [
+        "ticket_classifier_readme.md",
+        "ticket_finetune.py",
+        "churn_readme.md"
+      ],
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0
+    },
+    {
+      "question": "How is the churn model deployed?",
+      "expected_source": "churn_readme.md",
+      "retrieved_sources": [
+        "churn_readme.md",
+        "churn_readme.md",
+        "ticket_classifier_readme.md"
+      ],
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0
+    },
+    {
+      "question": "What tokenizer was used for the support ticket model?",
+      "expected_source": "ticket_finetune.py",
+      "retrieved_sources": [
+        "ticket_classifier_readme.md",
+        "ticket_finetune.py",
+        "ticket_finetune.py"
+      ],
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0
+    },
+    {
+      "question": "How does the churn preprocessing handle missing TotalCharges values?",
+      "expected_source": "churn_preprocessing.py",
+      "retrieved_sources": [
+        "churn_preprocessing.py",
+        "churn_readme.md",
+        "churn_readme.md"
+      ],
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0
+    }
+  ],
+  "precision_at_1": 0.8571428571428571,
+  "precision_at_3": 1.0
+}
