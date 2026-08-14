@@ -1,13 +1,36 @@
+\# ML Projects RAG Assistant
 
-## Retrieval Evaluation
 
-Built a small evaluation harness (7 test questions with known-correct source documents) to measure retrieval quality rather than relying on manual spot-checks.
 
-- Precision@1: 0.86 (6/7 questions retrieved the correct source as the top result)
-- Precision@3: 1.00 (all questions found the correct source within the top 3 results)
+A retrieval-augmented generation system that answers questions over my own ML project documentation. Uses local sentence-transformer embeddings, a ChromaDB vector store, and paragraph-based chunking, with a confidence-threshold guardrail to avoid answering out-of-scope questions.
 
-The one Precision@1 miss involved a question with overlapping content across two related documents, correctly resolved within the top 3.
 
-## Guardrail
 
-The system checks retrieval confidence before generating an answer. Below a similarity threshold, it responds that it does not have enough information rather than generating an unsupported answer.
+\## Quickstart
+
+
+
+```bash
+
+git clone https://github.com/VarshaVK-beep/ml-projects-rag-assistant.git
+
+cd ml-projects-rag-assistant
+
+pip install -r requirements.txt
+
+
+
+python src/build\_vector\_store.py
+
+python src/query\_rag.py "your question here"
+
+```
+
+
+
+\## Example
+
+
+
+Run `python src/query\_rag.py "What tuning method was used for the churn prediction model?"` and paste the actual output here once you've run it.
+
